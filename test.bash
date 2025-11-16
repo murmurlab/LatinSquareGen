@@ -5,6 +5,9 @@ if [ $# -ne 1 ]; then
 	exit 1
 fi
 
+# The number of Latin squares for n = 1 to 11
+# https://en.wikipedia.org/wiki/Latin_square#Number_of_n_%C3%97_n_Latin_squares
+
 python3 app.py -c 4 | while read line
 do
 	echo "Line: $line"
