@@ -1,3 +1,13 @@
+# Skyscraper problem solver tester ( Rush 01 )
+
+## Installation and Usage
+
+To run the tests, download repo then use the following command
+
+```bash
+./test.bash /path/to/your/skyscraper_solver_executable
+```
+
 # Latin Square Gen (LatinSquareGen)
 
 Easy-to-use software for calculating(generating) and counting the number of Latin squares in the user's given order, this program can perform any order without computational limitations. (Latin square generator)
