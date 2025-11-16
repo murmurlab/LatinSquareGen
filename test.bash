@@ -1,3 +1,10 @@
+#!/usr/bin/bash
+
+if [ $# -ne 1 ]; then
+	echo "Usage: $0 /home/ahmbasar/sources/repos/rush01/a.out"
+	exit 1
+fi
+
 python3 app.py -c 4 | while read line
 do
 	echo "Line: $line"
@@ -6,7 +13,7 @@ do
 	# echo "Views: $views"
 	# echo $'Matris: \x0a'"$matris"
 	# echo "---------------------"
-	outw=$(/home/ahmbasar/sources/repos/rush01/a.out "$views")
+	outw=$($1 "$views")
 	# echo "outw: $outw"
 	outm=$(node matris_to_literal.js "$outw")
 	# echo "outm: $outm"
